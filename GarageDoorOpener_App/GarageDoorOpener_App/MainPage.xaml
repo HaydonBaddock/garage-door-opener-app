@@ -4,11 +4,9 @@
              xmlns:local="clr-namespace:GarageDoorOpener_App"
              x:Class="GarageDoorOpener_App.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <Label Text="Garage Door Opener" FontSize="20" TranslationY="20" HorizontalOptions="Center"/>
+        <Button Text="Open" Clicked="Open_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" HeightRequest="150" CornerRadius="75"/>
+    </Grid>
 
 </ContentPage>

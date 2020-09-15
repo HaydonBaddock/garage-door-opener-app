@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
-    <application android:label="GarageDoorOpener_App.Android"></application>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+  
+    <application android:label="Garage Door Opener">
+
+      <service
+          android:name=".service.GarageDoorOpener"
+          android:enabled="true"
+          android:exported="false" />
+      
+    </application>
 </manifest>
